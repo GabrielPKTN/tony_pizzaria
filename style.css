@@ -14,5 +14,25 @@ ul, ol, li {
     list-style: none;
 }
 
+body {
+  padding: 0px 80px;
+}
 
+header {
+    height: 60px;
+    width: calc(100% - 160px);
+    position: fixed;
+    top: 60px;
+    background-color: bisque;
+    
+}
 
+main {
+    height: 700px; /*Temporario*/
+    background-color: blueviolet;
+}
+
+footer {
+    height: 526px;
+    background-color: orangered;
+}
