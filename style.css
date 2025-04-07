@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -14,8 +16,15 @@ ul, ol, li {
     list-style: none;
 }
 
+:root {
+    --primary-color: #F07807;
+    --second-color: #FBDDC1;
+    --default-shadow: #0004
+}
+
 body {
   padding: 0px 80px;
+  font-family:  "Poppins", sans-serif;
 }
 
 header {
@@ -23,8 +32,40 @@ header {
     width: calc(100% - 160px);
     position: fixed;
     top: 60px;
-    background-color: bisque;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+}
+header li {
+    padding: 4px 8px;
+    transition: .5s;
+}
+
+header li:hover {
+    background-color: var(--second-color);
+    box-shadow: 0 4px 4px var(--default-shadow);
+}
+
+header button {
+    display: flex;
+    height: 48px;
+    width: 120px;
+    background-color: var(--second-color);
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 4px var(--default-shadow);
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 800;
+    color: var(--primary-color);
 }
 
 main {
