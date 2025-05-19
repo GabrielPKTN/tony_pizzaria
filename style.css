@@ -489,3 +489,99 @@ footer{
     }
 
 }
+
+@media (max-width: 768px) {
+
+    header {
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .home {
+        background-image: none;
+        background-color: #F07807;
+        background-image: url(./img/background_mobile.png);
+        object-fit: cover;
+    }
+
+    .hero {
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .hero h2{
+        font-size: 32px;
+        width: 287px;
+    }
+
+    .hero h2 span {
+        background-color: var(--secondary-color);
+    }
+
+    .hero img {
+        display: none;
+    }
+
+    .cardapio {
+        gap: 20px;
+        height: auto;
+    }
+
+    .titulo_secao {
+        padding-top: 0;
+    }
+
+    .cardapio a {
+        display: none;
+    }
+
+    .cardapio .titulo_opcoes {
+        justify-content: center;
+    }
+
+    .opcoes_cardapio {
+        border-bottom: none;
+    }
+
+    .container_produtos .pizza:nth-child(2),
+    .container_produtos .pizza:nth-child(6) {
+        display: none;
+    }
+
+    .pizza.bebida {
+        width: 40%;
+    }
+
+    .opcoes_cardapio.bebida .container_produtos {
+        justify-content: center;
+    }
+
+    .servico_card p{
+        display: none;
+    }
+
+    .contatos_container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contatos_item.social {
+        align-items: center;
+    }
+
+    .contatos_item.social menu {
+        align-items: center;
+        padding-top: 20px;
+        flex-direction: row;
+    }
+
+    .creditos {
+        text-align: center;
+    }
+
+}
