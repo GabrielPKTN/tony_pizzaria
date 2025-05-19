@@ -35,8 +35,7 @@ body {
 header {
     border-radius: 15px;
     height: 60px;
-    width: 100%;
-    width: calc(100% - 160px);
+    width: 100vw;
     position: fixed;
     top: 60px;
     display: flex;
@@ -59,7 +58,7 @@ header li {
 }
 
 header li:hover {
-    background-color: var(--second-color);
+    background-color: var(--secondary-color);
     box-shadow: 0 4px 4px var(--default-shadow);
 }
 
@@ -67,7 +66,7 @@ header button {
     display: flex;
     height: 48px;
     width: 120px;
-    background-color: var(--second-color);
+    background-color: var(--secondary-color);
     border-radius: 12px;
     border: none;
     box-shadow: 0 4px 4px var(--default-shadow);
@@ -366,7 +365,7 @@ footer{
 }
 
 .social a:hover{
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
@@ -379,4 +378,47 @@ footer{
     font-size: 0.75rem;
     font-weight: 200;
     font-style: italic;
+}
+
+@media (max-width:1024px) {
+    header {
+        position: absolute;
+        background: transparent;
+        left: 0;
+        top: 48px;
+    }
+
+    header menu {
+        width: 100vw;
+        height: 64px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: var(--primary-color);
+        z-index: 99;
+        color: white;
+        justify-content: space-evenly;
+        font-size: 16px;  
+    }
+
+    header li:hover {
+        color: var(--primary-color);
+
+    }
+
+    .home .container_produtos {
+        display: none;
+    }
+
+    .home {
+        grid-template-rows: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: end;
+        padding-bottom: 64px;
+    }
+
 }
