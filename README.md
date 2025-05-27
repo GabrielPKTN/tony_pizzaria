@@ -1,5 +1,7 @@
 # TONY PIZZARIA
 
+![](./img/preview.png)
+
 Primeiro site sendo desenvolvido com 
 projeto no Figma.
 
